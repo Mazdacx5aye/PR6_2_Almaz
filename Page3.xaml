@@ -1,0 +1,42 @@
+﻿<Page x:Class="PR4_Test.Page3"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:charts="clr-namespace:System.Windows.Forms.DataVisualization.Charting;assembly=System.Windows.Forms.DataVisualization"
+      xmlns:local="clr-namespace:PR4_Test"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page3">
+
+    <Grid Background="#FFCB6554">
+        <TextBlock HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24"><Run Language="ru-ru" Text="Вариант 8"/></TextBlock>
+        <Image Margin="252,61,252,351" Source="/Images/3.png" Stretch="Fill"/>
+        <TextBlock HorizontalAlignment="Left" Margin="103,131,0,0" TextWrapping="Wrap" Text="x" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="txtX" HorizontalAlignment="Left" Margin="144,131,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="81" Height="27"/>
+        <TextBlock HorizontalAlignment="Left" Margin="103,173,0,0" TextWrapping="Wrap" Text="B" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="txtB" HorizontalAlignment="Left" Margin="144,173,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="81" Height="27"/>
+        <TextBlock HorizontalAlignment="Left" Margin="98,223,0,0" TextWrapping="Wrap" Text="X0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="txtX0" HorizontalAlignment="Left" Margin="144,220,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="81" Height="28"/>
+        <TextBlock HorizontalAlignment="Left" Margin="283,223,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16" Height="27" Width="51" RenderTransformOrigin="0.523,1.267"><Run Language="ru-ru" Text="Xk"/></TextBlock>
+        <TextBox x:Name="txtXk" HorizontalAlignment="Left" Margin="319,220,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="81" Height="28"/>
+        <TextBlock HorizontalAlignment="Left" Margin="81,276,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16" Height="27" Width="51" RenderTransformOrigin="0.523,1.267"><Run Language="ru-ru" Text="Ответ"/></TextBlock>
+        <TextBox x:Name="txtResult" TextWrapping="Wrap"  AcceptsReturn="True" VerticalScrollBarVisibility="Visible" HorizontalAlignment="Left" Margin="144,268,0,0" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnCalculate" Content="Вычислить" HorizontalAlignment="Left" Margin="144,366,0,0" VerticalAlignment="Top" FontSize="16" Height="33" Width="106" Click="btnCalculate_Click" Background="#FF8B92D7"/>
+        <Button x:Name="btnClear" Content="Очистить" HorizontalAlignment="Left" Margin="319,366,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.129,-0.122" FontSize="16" Height="31" Width="106" Click="btnClear_Click" Background="#FF8B92D7"/>
+        <TextBlock HorizontalAlignment="Left" Margin="507,223,0,0" TextWrapping="Wrap" Text="dx" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="txtDX" HorizontalAlignment="Left" Margin="543,220,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="81" Height="28"/>
+        <WindowsFormsHost HorizontalAlignment="Left" Height="100" Margin="507,290,0,0" VerticalAlignment="Top" Width="100">
+            <charts:Chart x:Name="ChartPayments">
+                <charts:Chart.Legends>
+                    <charts:Legend>
+
+                    </charts:Legend>
+                </charts:Chart.Legends>
+            </charts:Chart>
+
+        </WindowsFormsHost>
+
+
+    </Grid>
+</Page>
